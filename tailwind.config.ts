@@ -9,7 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       container: {
-        padding: "1rem",
+        padding: {
+          DEFAULT: "0.2rem",
+          md: "1rem",
+        },
+        center: true,
       },
     },
   },

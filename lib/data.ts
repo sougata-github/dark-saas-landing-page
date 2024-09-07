@@ -1,18 +1,22 @@
 export const links = [
   {
-    label: "",
-    href: "",
+    label: "About",
+    href: "#about",
   },
   {
-    label: "",
-    href: "",
+    label: "Features",
+    href: "#features",
   },
   {
-    label: "",
-    href: "",
+    label: "Updates",
+    href: "#updates",
   },
   {
-    label: "",
-    href: "",
+    label: "Help",
+    href: "#help",
+  },
+  {
+    label: "Customers",
+    href: "#customers",
   },
 ];

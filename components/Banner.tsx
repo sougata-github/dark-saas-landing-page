@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
-    <div className="py-3 text-center banner">
-      <div className="container">
+    <div className="py-3 text-center banner px-4">
+      <div className="section-container">
         <p className="font-medium">
           <span className="hidden sm:inline">
             Introducing a completely redesigned interface -
