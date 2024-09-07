@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
-const Menu = ({ className }: { className: string }) => {
+const Menu = ({ className }: { className?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

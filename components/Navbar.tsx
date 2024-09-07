@@ -8,7 +8,7 @@ import logoImage from "@/assets/images/logosaas.png";
 
 const Navbar = () => {
   return (
-    <div className="bg-black">
+    <div className="border-b-[0.5px] border-white/10">
       <div className="section-container">
         <div className="py-4 flex items-center justify-between">
           <div className="relative">

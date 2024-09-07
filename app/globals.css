@@ -9,11 +9,11 @@
 .banner {
   background-image: linear-gradient(
     to right,
-    rgba(252, 214, 255, 0.7),
-    rgba(41, 216, 255, 0.7),
-    rgba(255, 253, 128, 0.7),
-    rgba(248, 154, 191, 0.7),
-    rgba(252, 214, 255, 0.7)
+    rgba(252, 214, 255),
+    rgba(41, 216, 255),
+    rgba(255, 253, 128),
+    rgba(248, 154, 191),
+    rgba(252, 214, 255)
   );
 }
 
@@ -23,7 +23,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
     border-radius: 2px;
   }
 
@@ -33,7 +33,7 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-gray-700;
+    @apply bg-white/20;
     border-radius: 50px;
   }
 
