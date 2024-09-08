@@ -21,7 +21,6 @@
   .section-container {
     @apply max-w-5xl mx-auto px-4;
   }
-
   .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
     border-radius: 2px;
@@ -33,11 +32,17 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-white/20;
+    @apply bg-white;
     border-radius: 50px;
   }
 
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
+  }
+
+  .radial-gradient-bg {
+    @apply bg-[radial-gradient(closest-side,#000_86%,#9560EB)] 
+      md:bg-[radial-gradient(closest-side,#000_92%,#9560EB)] 
+      lg:bg-[radial-gradient(closest-side,#000_96%,#9560EB)];
   }
 }

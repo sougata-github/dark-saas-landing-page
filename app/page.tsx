@@ -1,13 +1,18 @@
 import Banner from "@/components/Banner";
 import Hero from "@/components/Hero";
+import LogoTicker from "@/components/LogoTicker";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Banner />
-      <Navbar />
+      <div className="z-10 sticky top-0 backdrop-blur-md">
+        <Banner />
+        <Navbar />
+      </div>
+
       <Hero />
+      <LogoTicker />
     </div>
   );
 }
