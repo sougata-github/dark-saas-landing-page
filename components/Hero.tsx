@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 import Arrow from "@/assets/icons/Arrow";
 import cursor from "@/assets/images/cursor.png";
@@ -30,31 +34,43 @@ const Hero = () => {
             <h1 className="text-7xl font-bold tracking-tighter inline-flex">
               One Task at a Time
             </h1>
-            <Image
-              priority
-              unoptimized
-              quality={100}
-              src={cursor}
-              alt="cursor"
-              height={200}
-              width={200}
-              className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] absolute right-[476px] top-[62px] hidden sm:inline"
-            />
-            <Image
-              priority
-              unoptimized
-              quality={100}
-              src={message}
-              alt="message"
-              height={200}
-              width={200}
-              className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] absolute top-[72px] left-[476px] hidden sm:inline"
-            />
+            <motion.div
+              className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] absolute right-[476px] top-[62px] hidden sm:inline z-10"
+              drag
+              dragSnapToOrigin
+            >
+              <Image
+                priority
+                unoptimized
+                quality={100}
+                src={cursor}
+                alt="cursor"
+                height={200}
+                width={200}
+                draggable="false"
+              />
+            </motion.div>
+            <motion.div
+              className="h-[150px] w-[150px] md:h-[200px] md:w-[200px] absolute top-[72px] left-[476px] hidden sm:inline z-10"
+              drag
+              dragSnapToOrigin
+            >
+              <Image
+                priority
+                unoptimized
+                quality={100}
+                src={message}
+                alt="message"
+                height={200}
+                width={200}
+                draggable="false"
+              />
+            </motion.div>
           </div>
         </div>
 
         <div className="flex justify-center relative">
-          <p className="text-center text-lg md:text-xl max-w-md sm:max-w-[480px] mx-auto mt-8 lg:pt-2 font-medium">
+          <p className="text-center text-lg md:text-xl max-w-md sm:max-w-[480px] mx-auto mt-8 lg:pt-2 font-medium z-10">
             Celebrate the joy of accomplishment with an app designed to track
             progress, motivate your efforts and celebrate your success.
           </p>

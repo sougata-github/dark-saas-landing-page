@@ -11,7 +11,7 @@ import Products from "@/components/Products";
 export default function Home() {
   return (
     <div>
-      <div className="z-10 sticky top-0 backdrop-blur-md">
+      <div className="z-40 sticky top-0 backdrop-blur-md">
         <Banner />
         <Navbar />
       </div>
