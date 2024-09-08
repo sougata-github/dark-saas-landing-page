@@ -11,7 +11,7 @@ const images = [acme, quantum, echo, celestial, pulse, apex];
 
 const LogoTicker = () => {
   return (
-    <div className="bg-black py-[72px] text-center">
+    <div className="bg-black py-[72px] sm:py-24 text-center">
       <div className="section-container">
         <h2 className="text-xl text-white/70">
           Trusted by the world&apos;s most innovative teams.
