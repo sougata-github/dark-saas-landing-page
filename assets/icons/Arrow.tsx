@@ -1,6 +1,6 @@
 import { twMerge } from "tailwind-merge";
 
-const ArrowW = ({ className }: { className?: string }) => {
+const Arrow = ({ className }: { className?: string }) => {
   return (
     <svg
       width="17"
@@ -18,4 +18,4 @@ const ArrowW = ({ className }: { className?: string }) => {
   );
 };
 
-export default ArrowW;
+export default Arrow;

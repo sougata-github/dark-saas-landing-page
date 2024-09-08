@@ -21,6 +21,11 @@
   .section-container {
     @apply max-w-5xl mx-auto px-4;
   }
+
+  .section-heading {
+    @apply text-white text-center text-5xl sm:text-6xl font-bold tracking-tighter;
+  }
+
   .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
     border-radius: 2px;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import ArrowW from "@/assets/icons/ArrowW";
+import Arrow from "@/assets/icons/Arrow";
 import cursor from "@/assets/images/cursor.png";
 import message from "@/assets/images/message.png";
 
@@ -20,7 +20,7 @@ const Hero = () => {
             </span>
             <span className="group inline-flex items-center gap-1">
               <span>Read More</span>
-              <ArrowW className="sm:group-hover:translate-x-1 transition duration-500" />
+              <Arrow className="sm:group-hover:translate-x-1 transition duration-500" />
             </span>
           </Link>
         </div>
