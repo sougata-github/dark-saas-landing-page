@@ -28,7 +28,7 @@ const Products = () => {
             duration: 0.4,
           }}
           viewport={{ once: true }}
-          className="relative rounded-lg [mask-image:linear-gradient(to_bottom,black_10%,transparent)]"
+          className="relative sm:rounded-lg [mask-image:linear-gradient(to_bottom,black_10%,transparent)]"
         >
           <Image
             priority
@@ -40,7 +40,12 @@ const Products = () => {
             height={100}
             className="mt-14 max-w-full w-full h-auto"
           />
-          <BorderBeam size={258} duration={12} delay={9} />
+          <BorderBeam
+            size={258}
+            duration={12}
+            delay={9}
+            className="max-sm:hidden"
+          />
         </motion.div>
       </div>
     </section>
