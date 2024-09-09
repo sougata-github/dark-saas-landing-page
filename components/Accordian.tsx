@@ -47,7 +47,7 @@ const Accordian = () => {
           </div>
           <div>
             <p
-              className="mt-2 text-white/70 max-w-md overflow-hidden transition-all duration-500"
+              className="mt-2 text-white/70 max-w-md overflow-hidden transition-all duration-500 max-sm:text-base"
               style={{
                 height: `${expanded[item.index] ? "100px" : "0px"}`,
               }}

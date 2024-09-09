@@ -30,10 +30,11 @@ const Feature = ({
     window.addEventListener("mousemove", updateMousePosition);
 
     return () => window.removeEventListener("mousemove", updateMousePosition);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1 relative">
+    <div className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1 relative max-sm:max-w-[320px] max-sm:mx-auto">
       <motion.div
         className="absolute -inset-[0.8px] border-2 border-purple-400 rounded-xl"
         style={{

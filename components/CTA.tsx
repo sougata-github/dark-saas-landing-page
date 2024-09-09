@@ -20,7 +20,7 @@ const CTA = () => {
 
   return (
     <section className="text-white py-[76px] sm:py-24" ref={containerRef}>
-      <div className="max-w-xl mx-auto relative">
+      <div className="max-w-xl mx-auto relative max-sm:px-8">
         <motion.div
           style={{
             translateY,
@@ -56,7 +56,7 @@ const CTA = () => {
         </motion.div>
 
         <h2 className="section-heading">Get instant access</h2>
-        <p className="text-center mt-5 text-xl text-white/70 max-w-md sm:max-w-xl mx-auto">
+        <p className="text-center text-lg sm:text-xl text-white/70 max-w-sm sm:max-w-xl mx-auto mt-5">
           Celebrate the joy of accomplishment with an app designed to track your
           progress and motivate your efforts.
         </p>
