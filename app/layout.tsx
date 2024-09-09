@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dark SaaS",
+  title: "Dark Saas",
   description: "Dark themed SaaS landing-page built using Next.js.",
 };
 
