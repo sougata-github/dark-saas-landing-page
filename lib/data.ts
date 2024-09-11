@@ -42,7 +42,7 @@ export const features = [
 export const items = [
   {
     index: 0,
-    question: "What payment methods do you take?",
+    question: "What payment methods do you accept?",
     answer:
       "We accept all major credit cards, PayPal, and various other payment methods depending on your location. Please Contact our support tram for more information on accepted payment methods in your region.",
   },
