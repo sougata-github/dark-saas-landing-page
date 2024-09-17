@@ -1,3 +1,6 @@
+import { FaChartLine, FaLock } from "react-icons/fa";
+import { MdEnergySavingsLeaf } from "react-icons/md";
+
 export const links = [
   {
     label: "About",
@@ -23,19 +26,20 @@ export const links = [
 
 export const features = [
   {
+    icon: MdEnergySavingsLeaf,
     title: "Integration Ecosystem",
-    description:
-      "Enhance your productivity by connecting with your tools, keeping your essentials in one place.",
+    description: "Enhance your productivity by connecting with your tools.",
   },
   {
+    icon: FaChartLine,
     title: "Goal Setting and Tracking",
     description:
-      "Define and track your goals, breaking down objectives into achievable tasks to keep your targets in sight.",
+      "Define and track your goals, breaking down objectives into achievable tasks.",
   },
   {
+    icon: FaLock,
     title: "Secure Data Encryption",
-    description:
-      "With end-to-end encryption, your data is securely stored and protected from unauthorized access.",
+    description: "With end-to-end encryption, your data is securely stored.",
   },
 ];
 

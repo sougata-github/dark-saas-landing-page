@@ -3,12 +3,12 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
-import Ecosystem from "@/assets/icons/Ecosystem";
-
 const Feature = ({
+  icon,
   title,
   description,
 }: {
+  icon: React.ReactNode;
   title: string;
   description: string;
 }) => {
@@ -34,7 +34,7 @@ const Feature = ({
   }, []);
 
   return (
-    <div className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1 relative max-sm:max-w-[320px] max-sm:mx-auto">
+    <div className="border border-white/30 px-5 py-10 text-center rounded-xl sm:flex-1 relative max-md:max-w-[320px] max-md:mx-auto">
       <motion.div
         className="absolute -inset-[0.8px] border-2 border-purple-400 rounded-xl"
         style={{
@@ -44,8 +44,8 @@ const Feature = ({
         ref={ref}
       />
 
-      <div className="inline-flex h-14 w-14 bg-white text-black items-center justify-center rounded-lg">
-        <Ecosystem />
+      <div className="inline-flex size-12 bg-white text-black items-center justify-center rounded-full">
+        {icon}
       </div>
       <h3 className="text-white mt-6 font-bold">{title}</h3>
       <p className="mt-2 text-white/70 max-w-md mx-auto">{description}</p>

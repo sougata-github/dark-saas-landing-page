@@ -12,10 +12,11 @@ const Features = () => {
           one place. Set tasks, get reminders, and see your progress simply and
           quickly.
         </p>
-        <div className="mt-16 flex flex-col sm:flex-row gap-4">
+        <div className="mt-16 flex flex-col md:flex-row gap-4">
           {features.map((feature) => (
             <Feature
               key={feature.title}
+              icon={<feature.icon className="size-5" />}
               title={feature.title}
               description={feature.description}
             />
